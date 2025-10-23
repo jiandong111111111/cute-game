@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>柯威表演吃苹果</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 登录页面 -->
+    <div id="loginPage" class="page">
+        <div class="login-container">
+            <h1>游戏登录</h1>
+            <div class="username-display">
+                <span>用户名：</span>
+                <span class="username">柯威</span>
+            </div>
+            <button id="loginBtn">进入游戏</button>
+        </div>
+    </div>
+
+    <!-- 游戏页面 -->
+    <div id="gamePage" class="page hidden">
+        <h2>柯威喜欢吃苹果</h2>
+        <div class="score-board">吃到的苹果：<span id="appleCount">0</span> 个</div>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        <div class="controls">使用 ← → 方向键控制移动</div>
+    </div>
+
+    <!-- 新增：庆祝页面（显示大猪） -->
+    <div id="celebrationPage" class="page hidden">
+        <div class="celebration-content">
+            <h1>恭喜柯威！</h1>
+            <p>柯威吃到了20个苹果，变成了大猪！</p>
+            <div id="bigPig"></div> <!-- 大猪展示区域 -->
+            <button id="restartBtn">再来一次</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
